@@ -1,8 +1,12 @@
 import React from 'react';
-import style from "./Main.css"
+import style from "./Main.css";
+import SearchSong from './search/SearchSong';
 
 export const Main = () => {
   return (
-    <div>Main</div>
+    <div className='container main-container'>
+      <SearchSong />
+    </div>
   )
 }
+

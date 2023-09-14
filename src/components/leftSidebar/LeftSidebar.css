@@ -1,0 +1,213 @@
+.leftsidebar-container {
+    background-color: #091525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 12%;
+}
+
+.leftsidebar-container h4 {
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.play-style-lines {
+    color: lawngreen;
+}
+
+.song-container {
+    width: 12rem;
+}
+
+.song-container img {
+    width: 100%;
+    border: 2px solid #091525;
+    border-radius: 0.4rem;
+}
+
+.song-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: var(--color-primary);
+}
+
+.artist-name {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.song-content-icons {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.song-content-icons-container button {
+    background-color: #1d3458;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem 0.5rem;
+    color: lawngreen;
+    border: none;
+    box-shadow: rgba(8, 8, 31, 0.651) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 0.5rem;
+}
+
+
+.song-content-icons-container button:hover {
+    cursor: pointer;
+}
+
+/* ============================================ MUSIC CONTROLS =============================================== */
+.music-controls {
+    margin-top: 1.6rem;
+}
+
+.time-container {
+    background-color: var(--color-primary);
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 0.25rem;
+}
+
+.timebar {
+    background-color: #c70039;
+    border-radius: 0.2rem;
+    width: 50%;
+    height: 0.25rem;
+}
+
+.count-down-container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-primary);
+    margin-bottom: 0.4rem;
+}
+
+.count-down-container p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.06rem;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.control-btn-icon {
+    font-size: 1.3rem;
+}
+
+.volume-bar-container {
+    background-color: var(--color-primary);
+    border-radius: 0.2rem;
+    width: 45%;
+    height: 0.25rem;
+}
+
+.volume-bar {
+    background-color: #c70039;
+    border-radius: 0.2rem;
+    width: 75%;
+    height: 0.25rem;
+}
+
+.range {
+    background-color: #b8b6b6;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    border: 2px solid #d8d8d8;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.range {
+    position: absolute;
+    top: 0.12rem;
+    right: 1.3rem;
+}
+
+.search-tag-container {
+    padding: 1rem 1.3rem;
+}
+
+.search-tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.search-tag a{
+    background-color: #1d3458;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem 0.5rem;
+    color: lawngreen;
+    font-size: 0.87rem;
+    border: none;
+    box-shadow: rgba(8, 8, 31, 0.651) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 0.5rem;
+}
+
+.search-tag-container h4 {
+    margin-bottom: 1rem;
+}
+
+
+/* ===================================== USER PROFILE SECTION ==================================================== */
+
+.user-profile {
+    margin-top: 0.5rem;
+}
+
+.premium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin: 2rem 0;
+}
+
+.premium h4 {
+    margin: 0;
+    font-size: 0.8rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.user-icon {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+
+.user-profile-img-container {
+    width: 3rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.premium img {
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0.4;
+    border: 2px solid #c70039;
+}
+
+.notification-icon {
+    position: absolute;
+    top: -0.3rem;
+    right: -1.5rem;
+}

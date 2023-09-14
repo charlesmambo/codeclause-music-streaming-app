@@ -28,31 +28,31 @@ export const RightSidebar = () => {
           <h4 className='menu-text'>menu</h4>
             <ul className='rightbar-menu-list'>
               <li className='rightbar-item-list'>
-                <SiHomebridge className='menu-icon' />
+                <SiHomebridge className='global-icon' />
                 <a href="">home</a>
               </li>
               <li  className='rightbar-item-list'>
-                <BsMusicPlayerFill className='menu-icon'  />
+                <BsMusicPlayerFill className='global-icon'  />
                 <a href="">explore</a>
               </li>
               <li  className='rightbar-item-list'>
-                <PiUserCircleBold className='menu-icon' />
+                <PiUserCircleBold className='global-icon' />
                 <a href="">artist</a>
               </li>
               <li  className='rightbar-item-list'>
-                <TbFolderHeart className='menu-icon'/>
+                <TbFolderHeart className='global-icon'/>
                 <a href="">genres</a>
               </li>
               <li  className='rightbar-item-list'>
-                <ImFolderOpen className='menu-icon'/>
+                <ImFolderOpen className='global-icon'/>
                 <a href="">album</a>
               </li>
               <li  className='rightbar-item-list'>
-                <PiGooglePodcastsLogoFill className='menu-icon'/>
+                <PiGooglePodcastsLogoFill className='global-icon'/>
                 <a href="">podcast</a>
               </li>
               <li  className='rightbar-item-list'>
-                <BsUiRadios className='menu-icon'/>
+                <BsUiRadios className='global-icon'/>
                 <a href="">radio</a>
               </li>
             </ul>
@@ -60,15 +60,15 @@ export const RightSidebar = () => {
             <h4 className='menu-text'> playlist</h4>
             <ul className='rightbar-menu-list'>
               <li className='rightbar-item-list'>
-                <MdLocalLibrary className='menu-icon'/>
+                <MdLocalLibrary className='global-icon'/>
                 <a href="">Your Library</a>
               </li>
               <li  className='rightbar-item-list'>
-                <HiCloudDownload className='menu-icon'/>
+                <HiCloudDownload className='global-icon'/>
                 <a href="">your downloads</a>
               </li>
               <li  className='rightbar-item-list'>
-                <AiFillLike className='menu-icon'/>
+                <AiFillLike className='global-icon'/>
                 <a href="">liked songs</a>
               </li>
             </ul>

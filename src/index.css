@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Ubuntu:wght@400;500;700&family=Work+Sans:wght@500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Montserrat:wght@400;600;700&family=Work+Sans:wght@500;600&display=swap');
 
 * {
     box-sizing: border-box;
@@ -14,9 +14,7 @@ body {
     background-color: #EDE4FF;
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    height: 100vh;
     overflow: hidden;
-    /* font-family: 'Ubuntu', sans-serif; */
 }
 
 :root {
@@ -47,6 +45,7 @@ h1 {
 }
 
 h4 {
+    color: var(--color-primary);
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
@@ -65,4 +64,17 @@ a {
 
 a:hover {
     color: var(--color-hover);
+}
+
+.global-icon {
+    font-size: 1rem;
+    color: #C70039;
+}
+
+.global-icon:hover {
+    cursor: pointer;
+}
+
+.App {
+    display: flex;
 }
