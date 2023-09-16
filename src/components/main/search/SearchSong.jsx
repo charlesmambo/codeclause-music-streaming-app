@@ -13,7 +13,7 @@ const SearchSong = () => {
         type="text" 
         name="music-search" 
         id="music-search" 
-        placeholder="Search A Song "
+        placeholder="Search Artist, Song, Album"
       />
       <MdOutlineCancel className="search-icon"/>
     </div>
