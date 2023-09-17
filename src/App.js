@@ -1,13 +1,15 @@
-import { LeftSidebar } from "./components/leftSidebar/LeftSidebar";
+// import { LeftMenu} from "./components/leftMenu/LeftMenu";
 import { Main } from "./components/main/Main";
-import { RightSidebar } from "./components/rightSidebar/RightSidebar";
+import { RightMenu } from "./components/rightMenu/RightMenu";
+import LeftMenu from './components/leftMenu/LeftMenu';
+import AppStyle from "./App.css"
 
 function App() {
   return (
     <div className="App">
-      <RightSidebar />
+      <LeftMenu />
       <Main />
-      <LeftSidebar />
+      <RightMenu />
     </div>
   );
 }

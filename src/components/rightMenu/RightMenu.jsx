@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./LeftSidebar.css";
+import style from "./RightMenu.css";
 import artistImg from "../../assets/sia.png";
 import {AiFillLike} from "react-icons/ai";
 import {BsThreeDots} from "react-icons/bs";
@@ -15,7 +15,7 @@ import {MdSettingsInputComponent} from "react-icons/md";
 import UserImg from "../../assets/user-pic.jpg"
 
 
-export const LeftSidebar = () => {
+export const RightMenu = () => {
   return (
     <div className='container leftsidebar-container'>
       <h4>Now Playing <span className='play-style-lines'>----</span></h4>

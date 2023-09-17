@@ -1,0 +1,83 @@
+.rightmenu-container {
+    background: var(--color-bg);
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0.5rem 0;
+    width: 18rem;
+    transition: var(--transition);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 2rem 0 1.3rem 0;
+    padding: 0 2rem 2rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+ small {
+    display: block;
+    margin: 0 auto;
+    color: lawngreen;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.logo {
+    font-size: 1.3rem;
+    color: #F8DE22;
+}
+
+.logo-container h2 {
+    color: lawngreen;
+}
+
+
+.menu-text {
+    padding: 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.rightbar-menu-list {
+    position: relative;
+}
+
+.rightmenu-item-list {
+    padding: 0 2rem;
+}
+
+.rightmenu-item-list:hover,
+.rightmenu-item-list.active{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color: transparent;
+}
+
+
+.rightmenu-item-list a {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+    padding: 0.25rem 0;
+}
+
+
+.rightmenu-item-list a:hover,
+.rightmenu-item-list a.active{
+    color: #f8de22; 
+    font-weight: 600;
+}
+
+.playlist a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.menu-icon {
+    font-size: 1rem;
+    color: #C70039;
+}

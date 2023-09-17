@@ -14,7 +14,10 @@ body {
     background-color: #EDE4FF;
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 :root {
@@ -27,6 +30,8 @@ body {
     --container-width-lg: 55%;
     --container-width-md: 65%;
     --container-width-lg: 75%;
+
+    --transition: all 0.4s ease;
 }
 
 section {
@@ -50,7 +55,7 @@ h4 {
     font-size: 1.3rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 2rem 0;
+    margin: 1.8rem 0;
 }
 
 p {
@@ -73,8 +78,4 @@ a:hover {
 
 .global-icon:hover {
     cursor: pointer;
-}
-
-.App {
-    display: flex;
 }
