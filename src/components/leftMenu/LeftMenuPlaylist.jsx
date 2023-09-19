@@ -17,7 +17,7 @@ const menuPlaylist = [
     {
         id: 3,
         icon: <AiFillLike/>,
-        name: "iked songs"
+        name: "liked songs"
     }
 ]
 
@@ -33,13 +33,13 @@ export const LeftMenuPlaylist = () => {
   return (
     <div>          
         <h4 className='menu-text'>playlist</h4>
-        <ul className='rightbar-menu-list'>
+        <ul className='rightbar-menu-list playlist-menu-container'>
         {menuPlaylist && menuPlaylist.map((menu, index) => (
           <li key={menu.id} className={`rightmenu-item-list playlist ${index === activeLink ? 'active' : ''}`}>
             <a href="#"  onClick={() => handleLinkClick(index)}
               className={index === activeLink ? 'active' : ''}>
-              <i className='global-icon'>{menu.icon}</i>
-              <span>{menu.name}</span>
+              <i className='global-icon left-icon playlist-icon'>{menu.icon}</i>
+              <span className='playlist-span'>{menu.name}</span>
             </a>
           </li>
         ))}

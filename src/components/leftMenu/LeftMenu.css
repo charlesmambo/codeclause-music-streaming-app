@@ -1,4 +1,4 @@
-.rightmenu-container {
+.leftmenu-container{
     background: var(--color-bg);
     height: 100%;
     min-height: 100vh;
@@ -62,7 +62,7 @@
     align-items: center;
     gap: 0.5rem;
     transition: var(--transition);
-    padding: 0.25rem 0;
+    padding: 0.3rem 0;
 }
 
 
@@ -80,4 +80,67 @@
 .menu-icon {
     font-size: 1rem;
     color: #C70039;
+}
+
+.playlist-menu-container {
+    overflow: scroll;
+    height: 13vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+.playlist a{
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .leftmenu-container{
+        padding: 0.5rem 0;
+        width: 8rem;
+    }
+
+    small {
+        font-size: 0.2rem;
+    }
+
+    .menu-text {
+        margin: 0.8rem 0;
+        padding: 0.8rem;
+        font-size: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.23) 0px 2px 3px;
+    }
+
+    .rightmenu-item-list {
+        padding: 0 1rem;
+    }
+
+    .rightmenu-item-list a {
+        gap: 0.6rem;
+        padding: 0rem 0;
+        font-size: 0.8rem;
+    }
+
+    .left-icon {
+        font-size: 0.7rem;
+    }
+
+    .logo-container {
+        margin: 0.5rem 0 1.3rem 0;
+        padding: 0 2rem 1rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.23) 0px 2px 3px;
+    }
+
+    .logo-container h2 {
+        font-size: 1.3rem;
+        margin-top: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .playlist-span {
+        font-size: 0.7rem;
+    }
 }

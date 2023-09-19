@@ -15,7 +15,7 @@ function Menu({ menuObject }) {
           <li key={menu.id} className={`rightmenu-item-list ${index === activeLink ? 'active' : ''}`}>
             <a href="#"  onClick={() => handleLinkClick(index)}
               className={index === activeLink ? 'active' : ''}>
-              <i className='global-icon'>{menu.icon}</i>
+              <i className='global-icon left-icon'>{menu.icon}</i>
               <span>{menu.name}</span>
             </a>
           </li>

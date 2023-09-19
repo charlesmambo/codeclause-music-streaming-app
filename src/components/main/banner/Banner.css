@@ -1,0 +1,124 @@
+.main-img{
+    height: 35vh;
+    border-bottom: 2px solid #c70039;
+    position: relative;
+}
+
+.main-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #73da47;
+    backdrop-filter: blur(10px);
+}
+
+.banner-bottom-layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    background: linear-gradient(transparent, #091525);
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.2rem;
+    background-color: #091525a6;
+    z-index: 2;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar h3 {
+    color: #f8de22;
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 8px #1b1c1d;
+}
+
+.top-bar-icon {
+    color: #f8de22;
+    font-size: 2rem;
+}
+
+.top-bar-icon:hover {
+    cursor: pointer;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    padding: 1rem 1.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.artist h1 {
+    text-shadow: 4px 4px 8px #1b1c1d;
+    color: #f8de22;
+}
+
+.streams p {
+    color: #f8de22;
+}
+
+.streams-stat {
+    font-size: 1.1rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.verify-icon {
+    color: #73da47;
+    font-size: 1.3rem;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.right-content a{
+    display: block;
+    text-transform: capitalize;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem 0.5rem;
+    color: #f8de22;
+    font-size: 0.89rem;
+    background-color: #1d3458;
+    letter-spacing: 1px;
+}
+
+.right-content a:hover{
+    cursor: pointer;
+}
+
+
+.follow-icon {
+    margin-bottom: -0.3rem;
+}

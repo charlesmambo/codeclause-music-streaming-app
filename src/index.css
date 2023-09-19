@@ -65,10 +65,12 @@ p {
 a {
     color: var(--color-primary);
     font-size: 1.1rem;
+    transition: var(--transition);
 }
 
 a:hover {
     color: var(--color-hover);
+    cursor: pointer;
 }
 
 .global-icon {

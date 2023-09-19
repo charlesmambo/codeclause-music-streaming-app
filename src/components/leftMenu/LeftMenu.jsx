@@ -13,7 +13,7 @@ import { LeftMenuPlaylist } from './LeftMenuPlaylist';
 const LeftMenu = () => {
   return (
     <section>
-      <div className="container rightmenu-container">
+      <div className="container leftmenu-container">
         <div className="logo-container">
           <SiBytedance className='logo' />
           <h2>slugSix</h2>
