@@ -5,13 +5,15 @@ import {IoMdNotifications} from "react-icons/io";
 import {MdOutlineSettingsSuggest} from "react-icons/md";
 import {MdSettingsInputComponent} from "react-icons/md";
 import UserImg from "../../assets/user-pic.jpg"
-import { TrackList } from './TrackList';
+import { RecomendTracks } from './recomendedTracks/RecomendTracks';
 
 
 export const RightMenu = () => {
   return (
     <div className='container rightmenu-container'>
-      <TrackList />
+      {/* <TrackList /> */}
+
+      <RecomendTracks />
    
       <div className="search-tag-container">
         <h4>Search tags <span className='play-style-lines'>----</span></h4>

@@ -4,10 +4,6 @@
     position: relative;
 }
 
-/* .main-content {
-    position: relative;
-} */
-
 .trending-tracks-container {
     padding: 1.4rem 1rem 0 1rem;
     color: var(--color-primary);
@@ -45,15 +41,6 @@
     letter-spacing: 2px;
 }
 
-/* .trending-song-list-container ul {
-    width: 100%;
-    overflow: scroll;
-    height: 34vh;
-    -ms-overflow-style: none;
-    scrollbar-width: none;  
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; 
-    border-bottom: 1px solid #091525;
-} */
 .trending-song-list-container ul::-webkit-scrollbar {
         display: none;
     
@@ -85,7 +72,6 @@
     width: 100%;
     background-color: #091320;
     height: 17vh;
-    /* background-image: linear-gradient(to right, #73da47 , #c70039); */
     overflow: hidden;
      position: absolute;
     bottom: 0;
@@ -93,11 +79,18 @@
     right: 0;
     box-sizing: border-box;
     padding: 0.8rem 0;
+    display: none;
 }
 
 
 
 /* =====================================TABLE ======================================================== */
+.audio-container {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
 .trending-song-list {
     display: flex;
     flex-direction: column;
@@ -133,7 +126,7 @@
     margin-top: 0.6rem;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 31vh;
+    height: 35vh;
     -ms-overflow-style: none;
     scrollbar-width: none;  
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; 
@@ -153,4 +146,297 @@
     vertical-align: middle;
   }
 
+  .img {
+    width: 10px;
+    height: 10px;
+  }
 
+  /* =========================================== PLAYBAR SECTION ======================================== */
+.main-song-container {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: #091525;
+    padding: 0.8rem;
+}
+
+.main-song-img {
+    width: 7rem;
+    height: 7rem;
+    min-width: 6rem;
+    overflow: hidden;
+    border-radius: 0.3rem;
+}
+
+.main-song-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-name-song {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.artist-name-song h5 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.artist-name-song p {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.middle-content {
+    width: 100%;
+
+}
+
+.countdown-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+
+.countdown-time span {
+    display: block;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.06rem;
+}
+
+.song-legnth{
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 0.25rem;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    position: relative;
+    appearance: none;
+    display: block;
+    margin-top: 0.3rem;
+    background-color: #fff;
+}
+.song-legnth:hover {
+    cursor: pointer;
+}
+
+.song-legnth::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #c70039;
+    border-radius: 0.2rem;
+    width: 0;
+    height: 0.25rem;
+    border-radius: 0.8rem;
+    transition: width var(  --transition) linear;
+    z-index: 2;
+}
+
+.song-legnth::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+/* firefox */
+.song-legnth::-moz-progress-bar {
+    -webkit-appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.song-legnth::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+
+.controls-container {
+    margin-top: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.like-song {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.like-icon{
+    font-size:1.2rem;
+}
+
+.active {
+    color: #73da47;
+}
+
+
+.control-content {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.control-icon {
+    font-size:1.6rem;
+}
+
+.song-length-container{
+    width: 100%;
+    height: 0.24rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 0.3rem;
+}
+
+.inner-bar {
+    width: 0;
+    height: 100%;
+    background: red;
+    border-radius: 20px;
+}
+
+.song-length-container:hover,
+.inner-bar:hover {
+    cursor: pointer;
+}
+
+
+/* =========================VOLUME SECTION ========================== */
+.volume {
+    display: flex;
+    align-items: center;
+}
+
+.volume input[type=range] {
+      display: none;
+      outline: none;
+    }
+    
+    
+ .volume-icon{
+      font-size: 1.3rem;
+    }
+    
+ .bar-box {
+      padding: 10px 15px;
+      opacity: 0.7;
+      transition: opacity .2s;
+      box-sizing: border-box;
+
+ }
+      
+ .bar-box:hover {
+        opacity: 1;
+        cursor: pointer;
+}
+    
+    .bar {
+      background: #fff;
+      height: 5px;
+      width: 120px;
+      border-radius: 15px;
+      pointer-events: none;
+      
+    }
+
+ .bar-fill {
+        background: #c70039;
+        width: 10%;
+        height: 100%;
+        background-clip: border-box;
+        pointer-events: none;
+        border-radius: 15px;
+      }
+
+  
+
+
+@media screen and (max-width: 600px){
+    .main-container {
+        min-width: 25rem;
+    }
+
+    .trending-tracks-container h4 {
+        font-size: 1rem;
+    }
+
+    .treading-song-heading {
+        font-size: 0.83rem;
+    }
+
+    .album-heading,
+    .album-name,
+    .option-icon,
+    .song-option-icon {
+        display: none;
+    }
+
+    .fixed-width-cell {
+        font-size: 0.8rem;
+        width: 35rem;
+
+    }
+    .song {
+        width: 35rem;
+    }
+
+    .main-song-img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 1px solid #091525;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+
+    .artist-name-song h5{
+        font-size: 0.84rem;
+    }
+
+    .artist-name-song p {
+        font-size: 0.82rem;
+    }
+
+    .st {
+        text-align: right;
+    }
+    .at {
+        position: relative;
+       right: -2.5rem;
+    }
+
+    .controls-container{
+        gap: 1rem;
+    }
+    .control-icon {
+        font-size: 1.2rem;
+    }
+    
+}

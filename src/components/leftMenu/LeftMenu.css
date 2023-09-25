@@ -94,6 +94,10 @@
     margin: 0;
 }
 
+.leftmenu-userprofile {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .leftmenu-container{
         padding: 0.5rem 0;
@@ -107,7 +111,7 @@
     .menu-text {
         margin: 0.8rem 0;
         padding: 0.8rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.23) 0px 2px 3px;
     }
 
@@ -142,5 +146,9 @@
 
     .playlist-span {
         font-size: 0.7rem;
+    }
+
+    .leftmenu-userprofile {
+        display: block;
     }
 }

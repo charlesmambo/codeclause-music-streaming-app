@@ -2,6 +2,11 @@ import React, {useState} from 'react';
 import { MdLocalLibrary } from 'react-icons/md';
 import { HiCloudDownload } from 'react-icons/hi';
 import { AiFillLike } from 'react-icons/ai';
+import {RiVipCrownFill } from 'react-icons/ri';
+import {MdOutlineSettingsSuggest} from "react-icons/md";
+import {MdSettingsInputComponent} from "react-icons/md";
+import {IoMdNotifications  } from 'react-icons/io';
+import UserImg from "../../assets/user-pic.jpg"
 
 const menuPlaylist = [
     {
@@ -44,6 +49,27 @@ export const LeftMenuPlaylist = () => {
           </li>
         ))}
       </ul>
+
+      <div className="user-profile leftmenu-userprofile">
+        <div className="premium">
+          <RiVipCrownFill className='global-icon user-icon'/>
+          <h4>go pro</h4>
+        </div>
+        <div className="premium">
+          <MdOutlineSettingsSuggest className='global-icon user-icon'/>
+          <h4>setings</h4>
+        </div>
+
+        <div className="premium">
+          <MdSettingsInputComponent className='global-icon user-icon'/>
+          <h4>...</h4>
+        </div>
+
+        <div className="premium user-profile-img-container">
+          <img src={UserImg} alt="user`s profile picture" />
+          <IoMdNotifications className='global-icon user-icon notification-icon'/>
+        </div>
+      </div>
     </div>
   )
 }
