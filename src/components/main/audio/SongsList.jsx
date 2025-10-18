@@ -22,6 +22,7 @@ import Santino from "../../../audio/santino.mp3";
 import Zach from "../../../audio/zach.mp3";
 import Zyn from "../../../audio/zayn.mp3";
 import James from "../../../audio/james.mp3";
+import Lewis from "../../../audio/lewis.mp3";
 
 
 
@@ -188,11 +189,11 @@ const Songs = [
     {
       id: 17,
       favourite: false,
-      songName: "Calm Down",
-      artist: "Rema",
-      song: Rema,
-      album: "Rave & Roses",
-      length: "3.40",
+      songName: "No Right To Love You",
+      artist: "Rhys Lewis",
+      song: Lewis,
+      album: "Single",
+      length: "3.58",
       imgSrc: "https://www.afrocritik.com/wp-content/uploads/2022/02/images-2022-02-17T153456.921.jpeg"
     },
     {
