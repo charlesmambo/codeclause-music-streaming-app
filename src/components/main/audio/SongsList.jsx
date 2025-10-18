@@ -18,7 +18,7 @@ import Libianca from "../../../audio/libianca.mp3";
 import Terms from "../../../audio/terms.mp3";
 import Snz from "../../../audio/snooze.mp3";
 import Eli from "../../../audio/eli.mp3";
-import Santino from "../../../audio/santino.mp3";
+import Santino from "../../../audio/santino.mp3"; 
 import Zach from "../../../audio/zach.mp3";
 import Zyn from "../../../audio/zayn.mp3";
 import James from "../../../audio/james.mp3";
